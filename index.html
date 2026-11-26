@@ -1,1 +1,1867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Lawless Towing & Recovery | Ravenshoe QLD</title>
+
+<meta name="description" content="Lawless Towing and Recovery in Ravenshoe, Queensland. Towing, vehicle recovery and roadside assistance.">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#111;
+    color:#eee;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:90%;
+    max-width:1180px;
+    margin:auto;
+}
+
+/* =========================
+   POPUP
+========================= */
+
+.popup{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.88);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    z-index:9999;
+}
+
+.popup-box{
+    width:100%;
+    max-width:530px;
+    background:#181818;
+    border:2px solid #f0b323;
+    padding:40px 30px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 20px 70px rgba(0,0,0,.7);
+}
+
+.popup-label{
+    display:inline-block;
+    background:#f0b323;
+    color:#111;
+    font-size:11px;
+    font-weight:900;
+    padding:7px 14px;
+    letter-spacing:1.5px;
+    margin-bottom:18px;
+}
+
+.popup-box h2{
+    font-size:31px;
+    margin-bottom:15px;
+}
+
+.popup-box p{
+    color:#bbb;
+    margin-bottom:10px;
+}
+
+.popup-tech{
+    margin:22px 0;
+    padding:18px;
+    background:#222;
+    border-radius:6px;
+    color:#aaa;
+}
+
+.popup-tech strong{
+    display:block;
+    color:#fff;
+    margin-bottom:8px;
+}
+
+.popup-tech a{
+    color:#f0b323;
+    font-weight:bold;
+}
+
+.popup-box button{
+    border:0;
+    background:#f0b323;
+    color:#111;
+    padding:13px 28px;
+    font-weight:900;
+    cursor:pointer;
+    border-radius:4px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background:#0a0a0a;
+    border-bottom:3px solid #f0b323;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.nav{
+    min-height:78px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-mark{
+    width:44px;
+    height:44px;
+    background:#f0b323;
+    color:#111;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:23px;
+    font-weight:900;
+    transform:skew(-8deg);
+}
+
+.logo-text strong{
+    display:block;
+    font-size:20px;
+    letter-spacing:.5px;
+}
+
+.logo-text span{
+    font-size:10px;
+    letter-spacing:2px;
+    color:#f0b323;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:24px;
+}
+
+nav a{
+    font-size:13px;
+    color:#ccc;
+}
+
+nav a:hover{
+    color:#f0b323;
+}
+
+.call-btn{
+    background:#f0b323;
+    color:#111!important;
+    padding:11px 18px;
+    border-radius:4px;
+    font-weight:900;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:650px;
+    display:flex;
+    align-items:center;
+    background:
+        linear-gradient(90deg,rgba(5,5,5,.96),rgba(5,5,5,.78),rgba(5,5,5,.25)),
+        url("https://images.unsplash.com/photo-1486006920555-c77dcf18193c?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+}
+
+.hero-content{
+    max-width:730px;
+}
+
+.emergency{
+    display:inline-block;
+    background:#f0b323;
+    color:#111;
+    padding:8px 13px;
+    font-size:12px;
+    font-weight:900;
+    letter-spacing:1.5px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:clamp(48px,7vw,82px);
+    line-height:.95;
+    text-transform:uppercase;
+    font-weight:900;
+    margin-bottom:22px;
+}
+
+.hero h1 span{
+    color:#f0b323;
+}
+
+.hero p{
+    font-size:18px;
+    max-width:620px;
+    color:#d0d0d0;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 23px;
+    border-radius:4px;
+    font-weight:900;
+    font-size:14px;
+}
+
+.btn-yellow{
+    background:#f0b323;
+    color:#111;
+}
+
+.btn-outline{
+    border:1px solid #aaa;
+    color:white;
+}
+
+.btn-outline:hover{
+    border-color:#f0b323;
+    color:#f0b323;
+}
+
+/* =========================
+   EMERGENCY BAR
+========================= */
+
+.emergency-bar{
+    background:#f0b323;
+    color:#111;
+}
+
+.emergency-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+}
+
+.emergency-item{
+    padding:20px;
+    text-align:center;
+    border-right:1px solid rgba(0,0,0,.2);
+}
+
+.emergency-item:last-child{
+    border:0;
+}
+
+.emergency-item strong{
+    display:block;
+    font-size:16px;
+}
+
+.emergency-item span{
+    font-size:12px;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section{
+    padding:90px 0;
+}
+
+.dark-section{
+    background:#151515;
+}
+
+.section-title{
+    max-width:700px;
+    margin:0 auto 50px;
+    text-align:center;
+}
+
+.section-title small{
+    color:#f0b323;
+    font-weight:900;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.section-title h2{
+    font-size:42px;
+    text-transform:uppercase;
+    margin:8px 0 12px;
+}
+
+.section-title p{
+    color:#999;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:55px;
+    align-items:center;
+}
+
+.about-image{
+    min-height:470px;
+    background:
+        linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)),
+        url("https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1000&q=85")
+        center/cover;
+    border:5px solid #242424;
+}
+
+.about-text small{
+    color:#f0b323;
+    font-weight:900;
+    letter-spacing:2px;
+}
+
+.about-text h2{
+    font-size:42px;
+    text-transform:uppercase;
+    margin:10px 0 20px;
+}
+
+.about-text p{
+    color:#aaa;
+    margin-bottom:17px;
+}
+
+.about-points{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+    margin-top:25px;
+}
+
+.point{
+    background:#1d1d1d;
+    padding:15px;
+    border-left:3px solid #f0b323;
+}
+
+.point strong{
+    display:block;
+    color:#fff;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.service{
+    background:#1b1b1b;
+    border:1px solid #292929;
+    padding:30px;
+    transition:.2s;
+}
+
+.service:hover{
+    transform:translateY(-5px);
+    border-color:#f0b323;
+}
+
+.service-icon{
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+.service h3{
+    text-transform:uppercase;
+    margin-bottom:9px;
+}
+
+.service p{
+    color:#999;
+    font-size:14px;
+}
+
+/* =========================
+   RECOVERY BANNER
+========================= */
+
+.recovery{
+    background:
+        linear-gradient(90deg,rgba(0,0,0,.95),rgba(0,0,0,.65)),
+        url("https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+}
+
+.recovery-box{
+    max-width:850px;
+}
+
+.recovery-box small{
+    color:#f0b323;
+    font-weight:900;
+    letter-spacing:2px;
+}
+
+.recovery-box h2{
+    font-size:48px;
+    text-transform:uppercase;
+    margin:10px 0 15px;
+}
+
+.recovery-box p{
+    color:#ccc;
+    margin-bottom:25px;
+}
+
+/* =========================
+   SERVICE AREA
+========================= */
+
+.area-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.area-card{
+    background:#1b1b1b;
+    padding:28px;
+    border-left:4px solid #f0b323;
+}
+
+.area-card h3{
+    margin-bottom:8px;
+}
+
+.area-card p{
+    color:#999;
+}
+
+/* =========================
+   TECHNIZEN SALES
+========================= */
+
+.website-offer{
+    background:#f8efd9;
+    color:#222;
+    border-top:5px solid #d4a445;
+    border-bottom:5px solid #d4a445;
+    position:relative;
+    overflow:hidden;
+}
+
+.ribbon{
+    position:absolute;
+    right:-48px;
+    top:28px;
+    transform:rotate(40deg);
+    background:#111;
+    color:#f0b323;
+    padding:9px 55px;
+    font-size:11px;
+    font-weight:900;
+    letter-spacing:1px;
+}
+
+.offer-grid{
+    display:grid;
+    grid-template-columns:1.4fr .8fr;
+    gap:45px;
+    align-items:center;
+}
+
+.offer-text small{
+    color:#a66f0c;
+    font-weight:900;
+    letter-spacing:2px;
+}
+
+.offer-text h2{
+    font-size:42px;
+    line-height:1.12;
+    text-transform:uppercase;
+    margin:10px 0 15px;
+    color:#222;
+}
+
+.offer-text p{
+    color:#666;
+    margin-bottom:20px;
+}
+
+.benefits{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+}
+
+.benefit{
+    background:rgba(255,255,255,.8);
+    padding:13px;
+    border-radius:6px;
+    font-size:13px;
+    font-weight:800;
+}
+
+.price-card{
+    background:#fff;
+    padding:38px 30px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 15px 45px rgba(0,0,0,.12);
+}
+
+.price-card h3{
+    font-size:24px;
+}
+
+.price{
+    font-size:52px;
+    font-weight:900;
+    color:#a96f08;
+}
+
+.price small{
+    color:#777;
+}
+
+.renew{
+    display:inline-block;
+    background:#111;
+    color:#f0b323;
+    padding:8px 14px;
+    font-size:12px;
+    font-weight:900;
+    margin:12px 0 20px;
+}
+
+/* =========================
+   LOVE WEBSITE
+========================= */
+
+.love{
+    background:#fff;
+    color:#222;
+}
+
+.love-box{
+    background:#f2ede2;
+    border:2px solid #d7bf8b;
+    border-radius:14px;
+    padding:50px;
+    text-align:center;
+}
+
+.love-box small{
+    color:#a36d0c;
+    font-weight:900;
+    letter-spacing:2px;
+}
+
+.love-box h2{
+    font-size:40px;
+    text-transform:uppercase;
+    margin:8px 0;
+}
+
+.love-box p{
+    max-width:720px;
+    margin:15px auto;
+    color:#666;
+}
+
+.domain{
+    display:inline-block;
+    background:#fff;
+    border:1px solid #d7cfbc;
+    padding:10px 18px;
+    font-weight:900;
+    color:#9d6b0c;
+    margin:8px 0 18px;
+}
+
+/* =========================
+   WHY US
+========================= */
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.why{
+    text-align:center;
+    padding:28px 15px;
+    background:#1b1b1b;
+}
+
+.why-icon{
+    font-size:30px;
+    margin-bottom:12px;
+}
+
+.why strong{
+    display:block;
+    margin-bottom:5px;
+}
+
+.why span{
+    color:#888;
+    font-size:13px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.map{
+    min-height:430px;
+}
+
+.map iframe{
+    width:100%;
+    height:100%;
+    min-height:430px;
+    border:0;
+}
+
+.contact-card{
+    background:#1b1b1b;
+    padding:40px;
+    border-top:4px solid #f0b323;
+}
+
+.contact-card h2{
+    font-size:38px;
+    text-transform:uppercase;
+    margin-bottom:20px;
+}
+
+.contact-item{
+    margin:18px 0;
+}
+
+.contact-item small{
+    display:block;
+    color:#f0b323;
+    font-size:11px;
+    font-weight:900;
+    letter-spacing:1.5px;
+}
+
+.contact-item a{
+    color:white;
+}
+
+.contact-form{
+    margin-top:25px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    background:#111;
+    border:1px solid #333;
+    color:#fff;
+    padding:13px;
+    margin-bottom:10px;
+    font-family:inherit;
+}
+
+.contact-form textarea{
+    min-height:110px;
+}
+
+.contact-form button{
+    width:100%;
+    padding:14px;
+    border:0;
+    background:#f0b323;
+    color:#111;
+    font-weight:900;
+    cursor:pointer;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#080808;
+    padding-top:55px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:1.5fr 1fr 1fr;
+    gap:40px;
+    padding-bottom:45px;
+}
+
+.footer-brand h2{
+    text-transform:uppercase;
+    margin-bottom:10px;
+}
+
+.footer-brand p{
+    color:#777;
+}
+
+.footer-col h3{
+    color:#f0b323;
+    margin-bottom:15px;
+}
+
+.footer-col a{
+    display:block;
+    color:#888;
+    margin:8px 0;
+    font-size:14px;
+}
+
+.footer-col a:hover{
+    color:#f0b323;
+}
+
+.footer-bottom{
+    border-top:1px solid #222;
+    text-align:center;
+    padding:25px 15px;
+    color:#777;
+    font-size:13px;
+}
+
+.footer-bottom a{
+    color:#f0b323;
+    font-weight:bold;
+}
+
+/* =========================
+   FLOAT
+========================= */
+
+.tech-float{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#f0b323;
+    color:#111;
+    padding:13px 18px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:900;
+    box-shadow:0 8px 25px rgba(0,0,0,.35);
+    z-index:900;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:900px){
+
+    nav{
+        display:none;
+    }
+
+    .about-grid,
+    .offer-grid,
+    .contact-grid,
+    .area-grid{
+        grid-template-columns:1fr;
+    }
+
+    .services{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .why-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .emergency-grid{
+        grid-template-columns:1fr;
+    }
+
+    .emergency-item{
+        border-right:0;
+        border-bottom:1px solid rgba(0,0,0,.2);
+    }
+
+    .benefits{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:600px){
+
+    section{
+        padding:65px 0;
+    }
+
+    .hero{
+        min-height:590px;
+    }
+
+    .hero h1{
+        font-size:48px;
+    }
+
+    .services,
+    .why-grid,
+    .benefits,
+    .about-points{
+        grid-template-columns:1fr;
+    }
+
+    .section-title h2,
+    .about-text h2,
+    .offer-text h2{
+        font-size:32px;
+    }
+
+    .recovery-box h2{
+        font-size:36px;
+    }
+
+    .love-box{
+        padding:35px 20px;
+    }
+
+    .love-box h2{
+        font-size:31px;
+    }
+
+    .ribbon{
+        display:none;
+    }
+
+    .tech-float{
+        right:12px;
+        bottom:12px;
+        font-size:12px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+     SAMPLE POPUP
+========================= -->
+
+<div class="popup" id="samplePopup">
+
+    <div class="popup-box">
+
+        <div class="popup-label">
+            SAMPLE WEBSITE CONCEPT
+        </div>
+
+        <h2>This Website Is A Sample</h2>
+
+        <p>
+            This website has been created as a sample concept
+            for <strong>Lawless Towing and Recovery</strong>.
+        </p>
+
+        <p>
+            It demonstrates how a professional towing and
+            recovery business could be presented online.
+        </p>
+
+        <div class="popup-tech">
+
+            <strong>
+                Website Concept by Technizen Solutions
+            </strong>
+
+            All rights reserved to Technizen Solutions.
+
+            <br><br>
+
+            <a href="https://technizen.com.au/" target="_blank">
+                technizen.com.au
+            </a>
+
+            <br>
+
+            WhatsApp:
+            <a href="https://wa.me/61342361236" target="_blank">
+                +61 3 4236 1236
+            </a>
+
+        </div>
+
+        <button onclick="closePopup()">
+            VIEW WEBSITE
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+    <div class="container nav">
+
+        <a href="#" class="logo">
+
+            <div class="logo-mark">
+                LR
+            </div>
+
+            <div class="logo-text">
+                <strong>LAWLESS</strong>
+                <span>TOWING & RECOVERY</span>
+            </div>
+
+        </a>
+
+
+        <nav>
+
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#why">Why Us</a>
+            <a href="#contact">Contact</a>
+
+            <a
+                href="tel:+61499382162"
+                class="call-btn">
+
+                CALL NOW
+
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <div class="emergency">
+                RAVENSHOE · QUEENSLAND
+            </div>
+
+            <h1>
+                TOWING.<br>
+                <span>RECOVERY.</span><br>
+                DONE RIGHT.
+            </h1>
+
+            <p>
+                Reliable towing and vehicle recovery services
+                for Ravenshoe and surrounding areas. When you
+                need a vehicle moved, recovered or towed,
+                we're ready to help.
+            </p>
+
+            <div class="buttons">
+
+                <a
+                    href="tel:+61499382162"
+                    class="btn btn-yellow">
+
+                    📞 CALL +61 499 382 162
+
+                </a>
+
+                <a
+                    href="#services"
+                    class="btn btn-outline">
+
+                    OUR SERVICES
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     EMERGENCY BAR
+========================= -->
+
+<div class="emergency-bar">
+
+    <div class="container emergency-grid">
+
+        <div class="emergency-item">
+            <strong>🚛 TOWING</strong>
+            <span>Vehicle transport & towing</span>
+        </div>
+
+        <div class="emergency-item">
+            <strong>🔧 RECOVERY</strong>
+            <span>Vehicle recovery assistance</span>
+        </div>
+
+        <div class="emergency-item">
+            <strong>📞 CALL FOR ASSISTANCE</strong>
+            <span>Speak with the team directly</span>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about" class="dark-section">
+
+    <div class="container about-grid">
+
+        <div class="about-image"></div>
+
+        <div class="about-text">
+
+            <small>
+                ABOUT LAWLESS
+            </small>
+
+            <h2>
+                When You Need A Tow, You Need Someone Reliable.
+            </h2>
+
+            <p>
+                Lawless Towing and Recovery provides towing and
+                recovery services from Ravenshoe, Queensland.
+            </p>
+
+            <p>
+                Whether you're dealing with a vehicle breakdown,
+                accident recovery or simply need a vehicle
+                transported, professional towing support can
+                make a stressful situation easier.
+            </p>
+
+            <div class="about-points">
+
+                <div class="point">
+                    <strong>Local Service</strong>
+                    Ravenshoe based.
+                </div>
+
+                <div class="point">
+                    <strong>Recovery Support</strong>
+                    Vehicle recovery assistance.
+                </div>
+
+                <div class="point">
+                    <strong>Direct Contact</strong>
+                    Speak to the team.
+                </div>
+
+                <div class="point">
+                    <strong>Professional Approach</strong>
+                    Focused on getting the job done.
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section id="services">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <small>What We Do</small>
+
+            <h2>
+                Towing & Recovery Services
+            </h2>
+
+            <p>
+                Practical towing and recovery solutions
+                for motorists and vehicle owners.
+            </p>
+
+        </div>
+
+
+        <div class="services">
+
+            <div class="service">
+
+                <div class="service-icon">
+                    🚛
+                </div>
+
+                <h3>
+                    Vehicle Towing
+                </h3>
+
+                <p>
+                    Safe transportation of vehicles when
+                    you need them moved from one location
+                    to another.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <div class="service-icon">
+                    🔧
+                </div>
+
+                <h3>
+                    Vehicle Recovery
+                </h3>
+
+                <p>
+                    Recovery assistance for vehicles that
+                    cannot safely continue their journey.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <div class="service-icon">
+                    🚗
+                </div>
+
+                <h3>
+                    Breakdown Assistance
+                </h3>
+
+                <p>
+                    Towing support when your vehicle has
+                    broken down and needs assistance.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <div class="service-icon">
+                    ⚠️
+                </div>
+
+                <h3>
+                    Accident Recovery
+                </h3>
+
+                <p>
+                    Vehicle recovery following road incidents
+                    or accidents.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <div class="service-icon">
+                    🛻
+                </div>
+
+                <h3>
+                    Vehicle Transport
+                </h3>
+
+                <p>
+                    Transport assistance when a vehicle needs
+                    to be relocated.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <div class="service-icon">
+                    📍
+                </div>
+
+                <h3>
+                    Local Assistance
+                </h3>
+
+                <p>
+                    Local towing and recovery support
+                    around Ravenshoe.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     RECOVERY CTA
+========================= -->
+
+<section class="recovery">
+
+    <div class="container">
+
+        <div class="recovery-box">
+
+            <small>
+                NEED A TOW?
+            </small>
+
+            <h2>
+                Don't Stay Stranded.
+            </h2>
+
+            <p>
+                If your vehicle needs towing or recovery,
+                contact Lawless Towing and Recovery directly
+                to discuss your requirements.
+            </p>
+
+            <a
+                href="tel:+61499382162"
+                class="btn btn-yellow">
+
+                📞 CALL NOW
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SERVICE AREA
+========================= -->
+
+<section class="dark-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <small>Based In Ravenshoe</small>
+
+            <h2>
+                Local Knowledge. Local Service.
+            </h2>
+
+            <p>
+                Serving customers from Ravenshoe and
+                surrounding areas of the Tablelands.
+            </p>
+
+        </div>
+
+
+        <div class="area-grid">
+
+            <div class="area-card">
+
+                <h3>
+                    Ravenshoe
+                </h3>
+
+                <p>
+                    Based at 28 Grevillea Street,
+                    Ravenshoe QLD 4888.
+                </p>
+
+            </div>
+
+
+            <div class="area-card">
+
+                <h3>
+                    Atherton Tablelands
+                </h3>
+
+                <p>
+                    Contact the team to discuss your
+                    towing or recovery requirements
+                    outside the immediate area.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     TECHNIZEN SALES OFFER
+========================= -->
+
+<section class="website-offer">
+
+    <div class="ribbon">
+        SPECIAL WEBSITE OFFER
+    </div>
+
+    <div class="container offer-grid">
+
+        <div class="offer-text">
+
+            <small>
+                MAKE YOUR BUSINESS EASIER TO FIND
+            </small>
+
+            <h2>
+                Give Your Towing Business A Professional Online Presence.
+            </h2>
+
+            <p>
+                Customers searching for towing, recovery and
+                roadside assistance often need help quickly.
+                A professional website gives them a clear place
+                to find your services, phone number, location
+                and enquiry options.
+            </p>
+
+            <div class="benefits">
+
+                <div class="benefit">
+                    🌐 Custom Domain
+                </div>
+
+                <div class="benefit">
+                    🛡️ Brand Protection
+                </div>
+
+                <div class="benefit">
+                    ⏰ 24/7 Availability
+                </div>
+
+                <div class="benefit">
+                    📞 Call Enquiries
+                </div>
+
+                <div class="benefit">
+                    🔎 Organic Traffic
+                </div>
+
+                <div class="benefit">
+                    📣 Brand Awareness
+                </div>
+
+                <div class="benefit">
+                    ⭐ Credibility
+                </div>
+
+                <div class="benefit">
+                    📱 Mobile Friendly
+                </div>
+
+                <div class="benefit">
+                    📩 More Enquiries
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="price-card">
+
+            <h3>
+                GET YOUR WEBSITE
+            </h3>
+
+            <div class="price">
+                A$299
+            </div>
+
+            <small>
+                single-page site · first year
+            </small>
+
+            <br>
+
+            <div class="renew">
+                RENEWAL 60% OFF
+            </div>
+
+            <p>
+                A professional website designed
+                around your business.
+            </p>
+
+            <br>
+
+            <a
+                href="https://technizen.com.au/promo"
+                target="_blank"
+                class="btn btn-yellow">
+
+                ORDER THIS WEBSITE →
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     LOVE THIS WEBSITE
+========================= -->
+
+<section class="love">
+
+    <div class="container">
+
+        <div class="love-box">
+
+            <small>
+                YOUR BUSINESS DESERVES A WEBSITE
+            </small>
+
+            <h2>
+                LOVE THIS WEBSITE?
+            </h2>
+
+            <p>
+                We can build a similar website for your towing
+                business — or create something completely
+                different and even better.
+            </p>
+
+            <div class="domain">
+                yourbusiness.com.au
+            </div>
+
+            <p>
+                Build your own online identity with a custom
+                domain, professional design and a website
+                that works for your business 24/7.
+            </p>
+
+            <a
+                href="https://technizen.com.au/promo"
+                target="_blank"
+                class="btn btn-yellow">
+
+                CONTACT TECHNIZEN →
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     WHY CHOOSE US
+========================= -->
+
+<section id="why" class="dark-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <small>Why A Professional Website Matters</small>
+
+            <h2>
+                Be Ready When Customers Need You
+            </h2>
+
+        </div>
+
+
+        <div class="why-grid">
+
+            <div class="why">
+                <div class="why-icon">📱</div>
+                <strong>Mobile Friendly</strong>
+                <span>Easy to use from a phone.</span>
+            </div>
+
+            <div class="why">
+                <div class="why-icon">📞</div>
+                <strong>Quick Calls</strong>
+                <span>Make your phone number easy to find.</span>
+            </div>
+
+            <div class="why">
+                <div class="why-icon">🔎</div>
+                <strong>Search Visibility</strong>
+                <span>Help customers discover your business.</span>
+            </div>
+
+            <div class="why">
+                <div class="why-icon">⭐</div>
+                <strong>Credibility</strong>
+                <span>Present your business professionally.</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section id="contact">
+
+    <div class="container contact-grid">
+
+        <div class="map">
+
+            <iframe
+                src="https://www.google.com/maps?q=Lawless+Towing+and+Recovery,+28+Grevillea+St,+Ravenshoe+QLD+4888,+Australia&output=embed"
+                loading="lazy">
+            </iframe>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <h2>
+                Contact Us
+            </h2>
+
+            <p>
+                Need towing or recovery assistance?
+                Get in touch with Lawless Towing and Recovery.
+            </p>
+
+
+            <div class="contact-item">
+
+                <small>
+                    Phone
+                </small>
+
+                <a href="tel:+61499382162">
+                    +61 499 382 162
+                </a>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <small>
+                    Email
+                </small>
+
+                <a href="mailto:cltowing88@gmail.com">
+                    cltowing88@gmail.com
+                </a>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <small>
+                    Address
+                </small>
+
+                28 Grevillea St,<br>
+                Ravenshoe QLD 4888,<br>
+                Australia
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <small>
+                    Website
+                </small>
+
+                <a
+                    href="http://www.lawlesstowingandrecovery.com.au/"
+                    target="_blank">
+
+                    lawlesstowingandrecovery.com.au
+
+                </a>
+
+            </div>
+
+
+            <form
+                class="contact-form"
+                onsubmit="sendTechnizenWhatsApp(event)">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required>
+
+                <input
+                    type="text"
+                    id="phone"
+                    placeholder="Your Phone">
+
+                <textarea
+                    id="message"
+                    placeholder="Tell us what you need help with..."
+                    required></textarea>
+
+                <button type="submit">
+                    SEND WEBSITE ENQUIRY
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <h2>
+                Lawless Towing & Recovery
+            </h2>
+
+            <p>
+                Towing and recovery website sample concept
+                for Ravenshoe, Queensland.
+            </p>
+
+        </div>
+
+
+        <div class="footer-col">
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#why">Why Us</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div class="footer-col">
+
+            <h3>
+                Contact
+            </h3>
+
+            <a href="tel:+61499382162">
+                +61 499 382 162
+            </a>
+
+            <a href="mailto:cltowing88@gmail.com">
+                cltowing88@gmail.com
+            </a>
+
+            <a href="#contact">
+                28 Grevillea St, Ravenshoe QLD
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        This sample website was developed by
+        <a href="https://technizen.in/">
+            Technizen Solutions
+        </a>.
+
+        <br><br>
+
+        Want a website like this for your business?
+        Contact Technizen Solutions.
+
+        <br><br>
+
+        © 2026 Technizen Solutions · Sample Website Concept
+
+    </div>
+
+</footer>
+
+
+<!-- =========================
+     TECHNIZEN FLOATING BUTTON
+========================= -->
+
+<a
+    href="https://wa.me/61342361236"
+    target="_blank"
+    class="tech-float">
+
+    💬 Contact Technizen
+
+</a>
+
+
+<script>
+
+/* =========================
+   CLOSE POPUP
+========================= */
+
+function closePopup(){
+
+    document.getElementById("samplePopup").style.display = "none";
+
+}
+
+
+/* =========================
+   TECHNIZEN WHATSAPP FORM
+========================= */
+
+function sendTechnizenWhatsApp(event){
+
+    event.preventDefault();
+
+    const name =
+        document.getElementById("name").value;
+
+    const phone =
+        document.getElementById("phone").value;
+
+    const message =
+        document.getElementById("message").value;
+
+    const text =
+        "Hello Technizen Solutions,%0A%0A" +
+        "I am interested in the Lawless Towing & Recovery sample website.%0A%0A" +
+        "Name: " + encodeURIComponent(name) + "%0A" +
+        "Phone: " + encodeURIComponent(phone) + "%0A" +
+        "Message: " + encodeURIComponent(message);
+
+    window.open(
+        "https://wa.me/61342361236?text=" + text,
+        "_blank"
+    );
+
+}
+
+</script>
+
+</body>
+</html>
